@@ -6,7 +6,7 @@ This project is meant for allowing quick searches (< 1 second) of large CSV (100
 
 This script assumes the file has a `firstname` `lastname` `middlename` and `st` column for filtering, but those headers could easily be adjusted.
 
-For every line in the CSV a file named `lastname` is created which includes the first name and byte offsets of the line where it was founded in the larger CSV.
+For every line in the CSV a file named `lastname` is created which includes the first name and byte offsets of the line where it was found in the larger CSV.
 
 To search we simply read the `lastname` file, and for every line that matches `firstname` we get that data from the large csv using the byte offset data stored in the indexing step
 
